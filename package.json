@@ -1,0 +1,40 @@
+{
+  "name": "@zhengmj/cvcli",
+  "version": "1.0.1",
+  "description": "自定义VueCli指令",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "zhengmj",
+  "license": "ISC",
+  "bin": {
+    "cvcli": "index.js"
+  },
+  "dependencies": {
+    "@octokit/auth-basic": "^1.4.8",
+    "@octokit/rest": "^19.0.8",
+    "chalk": "^5.2.0",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "configstore": "^6.0.0",
+    "figlet": "^1.6.0",
+    "fs": "0.0.1-security",
+    "inquirer": "^9.2.3",
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.8",
+    "simple-git": "^3.18.0",
+    "touch": "^3.1.0",
+    "yargs": "^11.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liteis/custom-vue-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Liteis/custom-vue-cli/issues"
+  },
+  "homepage": "https://github.com/Liteis/custom-vue-cli#readme"
+}
