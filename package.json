@@ -1,6 +1,6 @@
 {
   "name": "@zhengmj/cvcli",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "自定义VueCli指令",
   "main": "index.js",
   "type": "module",

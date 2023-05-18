@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 export default new class {
-    createDirectoryAndFile(dirPath) {
+    createDirectoryAndFile(dirPath, fileName) {
         const directories = dirPath.split('/');
         let currentDirectory = '';
         // 循环创建目录
@@ -12,7 +12,7 @@ export default new class {
             }
         }
         // 根据最后目录名创建文件
-        const lastDirectory = directories[directories.length - 1];
+        // const lastDirectory = directories[directories.length - 1];
         //根据文件目录设置唯一样式
         // let currentClass = currentDirectory.replace(/\//g, '-');
         let vueContent = `<template>
@@ -40,8 +40,10 @@ export default {
 <style scoped lang="scss">
 
 </style>`
-        const fileName = path.join(currentDirectory, `${lastDirectory}.vue`);
-        fs.writeFileSync(fileName, vueContent);
+        const file = path.join(currentDirectory, `${fileName}.vue`);
+        if (!fs.existsSync(file)) {
+            fs.writeFileSync(file, vueContent);
+        }
     }
 
 }
